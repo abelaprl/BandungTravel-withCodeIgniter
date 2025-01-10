@@ -66,9 +66,8 @@ Proyek ini dibangun menggunakan framework **CodeIgniter** untuk memastikan perfo
 5. Buat pull request ke branch `main`.
 
 ## Tim Pengembang
-- Nama Developer 1
-- Nama Developer 2
-- Nama Developer 3
+- Abel Apriliani 18222008
+- Khansa Adilla Reva 18222044
 
 ## Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
