@@ -1,0 +1,170 @@
+ERROR - 2025-01-06 07:21:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tourist_transport' in E:\Semester 5\TST\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tourist_transpo...', 3306, '', 0)
+#1 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Semester 5\TST\CodeIgniter4-develop\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Semester 5\TST\CodeIgniter4-develop\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Semester 5\TST\CodeIgniter4-develop\app\Controllers\Tourism.php(17): CodeIgniter\BaseModel->findAll()
+#7 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Tourism->index()
+#8 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+#9 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Semester 5\TST\CodeIgniter4-develop\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 E:\Semester 5\TST\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Semester 5\TST\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Semester 5\TST\CodeIgniter4-develop\system\rewrite.php(44): require_once('E:\\Semester 5\\T...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tourist_transport' in E:\Semester 5\TST\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Semester 5\TST\CodeIgniter4-develop\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Semester 5\TST\CodeIgniter4-develop\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Semester 5\TST\CodeIgniter4-develop\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\Semester 5\TST\CodeIgniter4-develop\app\Controllers\Tourism.php(17): CodeIgniter\BaseModel->findAll()
+#6 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Tourism->index()
+#7 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+#8 E:\Semester 5\TST\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Semester 5\TST\CodeIgniter4-develop\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 E:\Semester 5\TST\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\Semester 5\TST\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 E:\Semester 5\TST\CodeIgniter4-develop\system\rewrite.php(44): require_once('E:\\Semester 5\\T...')
+#13 {main}
+CRITICAL - 2025-01-06 07:21:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tourist_transport'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `routes`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Tourism.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 07:22:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "route.php"
+[Method: GET, Route: tourism/route/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('route.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('route', [], true)
+ 3 APPPATH\Controllers\Tourism.php(31): view('route', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->route('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 07:22:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "destination.php"
+[Method: GET, Route: tourism/destination/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('destination.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('destination', [], true)
+ 3 APPPATH\Controllers\Tourism.php(51): view('destination', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->destination('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 07:23:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "destination.php"
+[Method: GET, Route: tourism/destination/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('destination.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('destination', [], true)
+ 3 APPPATH\Controllers\Tourism.php(51): view('destination', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->destination('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 07:23:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "route.php"
+[Method: GET, Route: tourism/route/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('route.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('route', [], true)
+ 3 APPPATH\Controllers\Tourism.php(31): view('route', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->route('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 07:24:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "schedule.php"
+[Method: GET, Route: tourism/schedule/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('schedule.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('schedule', [], true)
+ 3 APPPATH\Controllers\Tourism.php(42): view('schedule', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->schedule('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2025-01-06 08:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-06 08:32:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/route_list.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/route_list.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partials/route_list', [], true)
+ 3 APPPATH\Views\home.php(65): view('partials/route_list', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('E:\\Semester 5\\TST\\CodeIgniter4-develop\\app\\Views\\home.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 7 APPPATH\Controllers\Tourism.php(21): view('home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tourism->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tourism))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2025-01-06 08:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 08:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-06 09:18:53 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2025-01-06 09:18:55 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('E:\\Semester 5\\TST\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2025-01-06 09:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 09:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 09:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 09:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 10:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
