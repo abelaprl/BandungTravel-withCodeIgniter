@@ -20,7 +20,7 @@
                         <a class="nav-link" href="<?= site_url('transportation') ?>">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= site_url('transportation/statistics') ?>">Statistik</a>
+                    <a class="nav-link" href="<?= site_url('transportation/statistics') ?>">Statistik</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= site_url('recommendation/dashboard/' . session()->get('preference')) ?>">Rekomendasi</a>
@@ -40,4 +40,3 @@
     <?= $this->renderSection('scripts') ?>
 </body>
 </html>
-

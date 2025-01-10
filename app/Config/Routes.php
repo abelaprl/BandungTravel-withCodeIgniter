@@ -37,6 +37,5 @@ $routes->group('transportation', ['filter' => 'auth'], function($routes) {
     $routes->get('route/(:num)', 'Tourism::route/$1');
     $routes->get('schedule/(:num)', 'Tourism::schedule/$1');
     $routes->get('destination/(:num)', 'Tourism::destination/$1');
-    $routes->get('statistics', 'Tourism::statistics');
+    $routes->get('statistics', 'Transportation::statistics');
 });
-

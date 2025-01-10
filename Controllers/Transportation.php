@@ -77,4 +77,3 @@ class Transportation extends BaseController
         return view('transportation/statistics', $data);
     }
 }
-
