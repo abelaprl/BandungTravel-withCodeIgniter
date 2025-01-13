@@ -72,7 +72,7 @@ Ikuti langkah-langkah berikut untuk mengakses layanan ini melalui [darkturquoise
 
 4. **Manajemen Transportasi**
    
-   4.1 *Daftar Rute dan Rekomendasi Wisata* 
+      4.1 *Daftar Rute dan Destinasi Wisata Populer* 
    - Klik tombol **go to transportation management** di halaman rekomendasi
    - Halaman memunculkan daftar rute yang tersedia berdasarkan preferensi pengguna
    - Dapat melakukan filter jarak dan area
