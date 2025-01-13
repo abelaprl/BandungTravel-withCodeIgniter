@@ -82,7 +82,9 @@ Ikuti langkah-langkah berikut untuk mengakses layanan ini melalui [darkturquoise
    4.2 *Daftar Rute untuk Destinasi Wisata Tertentu*
    - Dapat melihat detail rute perjalanan
    - Klik **lihat jadwal**
+   - Dapat melihat jadwal keberangkatan dengan klik **lihat jadwal**
    ![image](https://github.com/user-attachments/assets/a6925ab9-4d2f-4b74-ad39-8679a08519a2)
+   ![image](https://github.com/user-attachments/assets/26c5173b-1e32-46f4-a887-5e868a2eb806)
 
    4.3 *Statistik Popularitas Destinasi Wisata*
    - Pilih menu **statistik**
