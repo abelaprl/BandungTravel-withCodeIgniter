@@ -26,14 +26,70 @@ Sistem ini membantu pengguna dalam merencanakan perjalanan wisata di Bandung den
 ### **1. Sistem Rekomendasi Destinasi Wisata**
 - Menyediakan rekomendasi berdasarkan:
   - Minat wisata (alam, budaya, kuliner).
-  - Rating destinasi.
-- Menampilkan informasi detail destinasi (deskripsi, foto, ulasan).
-- Menyimpan riwayat pencarian untuk personalisasi rekomendasi.
+- Menampilkan informasi detail destinasi.
+- Menyimpan riwayat personalisasi pengguna dan melakukan update.
 
 ### **2. Sistem Manajemen Transportasi Wisata**
 - Menampilkan rute perjalanan, estimasi waktu, jarak, dan titik penjemputan.
 - Menawarkan pilihan kendaraan (mobil pribadi, minibus, bus besar).
 - Menyediakan jadwal keberangkatan dan estimasi waktu kedatangan.
+
+## **Tata Cara Akses Layanan**
+
+Ikuti langkah-langkah berikut untuk mengakses layanan ini melalui [darkturquoise-lark-626979.hostingersite.com](https://darkturquoise-lark-626979.hostingersite.com/):
+
+1. **Registrasi Akun**
+   - Buka halaman utama dan klik tombol **Regoster Here**.
+   - Isi formulir registrasi dengan informasi berikut:
+     - Nama
+     - Email
+     - Kata Sandi
+     - Preferensi Wisata
+   - Klik tombol **Get Started** untuk membuat akun.
+   ![image](https://github.com/user-attachments/assets/822e65a9-3fd7-40f5-b0fc-d675aafae18b)
+   ![image](https://github.com/user-attachments/assets/dca7d6d6-dc3d-4216-9602-02790a78fbea)
+
+2. **Login**
+   - Masuk ke halaman **Login**.
+   - Masukkan email dan kata sandi yang telah didaftarkan.
+   - Klik tombol **Login**.
+   ![image](https://github.com/user-attachments/assets/ff2b5d52-a4af-4dfd-8098-2eda6b188c71)
+
+
+3. **Rekomendasi Destinasi**
+   
+   3.1 *Preferensi Pengguna* 
+   - Halaman memunculkan rekomendasi berdasarkan masukan pengguna saat register
+   - Dapat melakukan update preferensi untuk mendapatkan rekomendasi wisata yang berbeda dengan menekan tombol **update preference**
+   ![image](https://github.com/user-attachments/assets/0d637ac7-c532-4ecf-b763-b30b1a5ab7a6)
+   ![image](https://github.com/user-attachments/assets/e70a2dba-bdff-4493-8d22-568baab688a5)
+   ![image](https://github.com/user-attachments/assets/89ca701f-c872-47f4-beb8-328d157fb7fb)
+   ![image](https://github.com/user-attachments/assets/f41027a9-69ab-40db-9eb7-630e0e7bb020)
+
+   3.2 *Detail Destinasi*
+   - Dari halaman dashboard rekomendasi maka klik **view details**
+   ![image](https://github.com/user-attachments/assets/802cca4e-db05-4e81-8044-3e4faf9aa118)
+
+4. **Manajemen Transportasi**
+   
+   4.1 *Daftar Rute dan Rekomendasi Wisata* 
+   - Klik tombol **go to transportation management** di halaman rekomendasi
+   - Halaman memunculkan daftar rute yang tersedia berdasarkan preferensi pengguna
+   - Dapat melakukan filter jarak dan area
+   ![image](https://github.com/user-attachments/assets/708bcd2e-72f1-4803-b984-5cceafd6a957)
+   ![image](https://github.com/user-attachments/assets/7e356fe3-8ae9-4c92-aeb2-5082fd441b5b)
+
+   4.2 *Daftar Rute untuk Destinasi Wisata Tertentu*
+   - Dapat melihat detail rute perjalanan
+   - Klik **lihat jadwal**
+   ![image](https://github.com/user-attachments/assets/a6925ab9-4d2f-4b74-ad39-8679a08519a2)
+
+   4.3 *Statistik Popularitas Destinasi Wisata*
+   - Pilih menu **statistik**
+   ![image](https://github.com/user-attachments/assets/14cae775-2911-44d2-9dc3-5d756291807f)
+
+   4.4 *Detail Rekomendasi Wisata*
+   ![image](https://github.com/user-attachments/assets/6cfccdfd-3d5d-4158-a735-2d5086cd7f56)
 
 ---
 
@@ -97,6 +153,6 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal:
 | Nama Kontributor       | NIM       | Kontribusi                                                      |
 |------------------------|-----------|----------------------------------------------------------------|
 | Abel Apriliani         | 18222008  | Mengembangkan logika manajemen transportasi wisata dan integrasi kedua fitur utama layanan serta database.|
-| Khansa Adilla Reva     | 18222044  | Mengembangkan logika rekomendasi wisata dan deployment di niagahoster.     |
+| Khansa Adilla Reva     | 18222044  | Mengembangkan logika rekomendasi wisata dan hosting di niagahoster.     |
 
 
