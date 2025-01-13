@@ -39,7 +39,7 @@ Sistem ini membantu pengguna dalam merencanakan perjalanan wisata di Bandung den
 Ikuti langkah-langkah berikut untuk mengakses layanan ini melalui [darkturquoise-lark-626979.hostingersite.com](https://darkturquoise-lark-626979.hostingersite.com/):
 
 1. **Registrasi Akun**
-   - Buka halaman utama dan klik tombol **Regoster Here**.
+   - Buka halaman utama dan klik tombol **Register Here**.
    - Isi formulir registrasi dengan informasi berikut:
      - Nama
      - Email
